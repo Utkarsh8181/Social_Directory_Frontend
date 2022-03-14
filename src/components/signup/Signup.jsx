@@ -94,7 +94,7 @@ const Signup = () => {
                     passwordHelperText: "Please insert a valid password"
                 }))
             }
-        }
+        }   
     }
     return (
         <div className="Box-class">

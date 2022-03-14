@@ -1,10 +1,10 @@
 import './App.css';
-import Signup from './components/signup/Signup';
+import RouterDom from './components/router/router';
 
 function App() {
   return (
     <div className='App'>
-      <Signup /> 
+    <RouterDom />
     </div>
   );
 }
