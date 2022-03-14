@@ -2,6 +2,7 @@
 /* eslint-disable no-unused-vars */
 import React from "react";
 import './Signup.css';
+import { Register } from "../services/userServices";
 import TextField from '@mui/material/TextField';
 import Button from '@mui/material/Button';
 import image from '../../Images/image.png'
@@ -93,6 +94,21 @@ const Signup = () => {
                     ...regexhelpertext,
                     passwordHelperText: "Please insert a valid password"
                 }))
+            }
+            if (emailValidPattern === true && passwordValidPattern === true && phoneValidPattern === true) {
+                let obj = {
+                    "email": email,
+                    "password": password,
+                    "phoneNo": phone
+                }
+
+                Register(obj).then((res) => {
+                    console.log(res)
+                })
+                    .catch((err) => {
+                        console.log(err)
+                    })
+                console.log(obj);
             }
         }   
     }

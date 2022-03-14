@@ -3,6 +3,7 @@
     justify-content: center;
     margin-top: 0px;
     color: black;
+    margin-left: 65px;
 }
 
 .Container{
@@ -27,9 +28,6 @@
     flex-direction: row;
     justify-content: center;
     align-items: center
-}
-.heading, h1 {
-    margin: 11px;
 }
 .sign{
     display: flex;

@@ -1,6 +1,7 @@
 /* eslint-disable no-unused-vars */
 import React from "react";
 import './Signin.css';
+import { login } from "../services/userServices";
 import TextField from '@mui/material/TextField';
 import Button from '@mui/material/Button';
 const emailRegex = /^[a-zA-z]{3}([+-_ .]*[a-zA-Z0-9]+)*[@][a-zA-z0-9]+(.[a-z]{2,3})*$/;
@@ -66,6 +67,24 @@ function Signin() {
                     ...regexhelpertext,
                     passwordhelpertext: "Please insert a valid password"
                 }))
+            }
+            if (emailValidation === true && passwordValidation === true) {
+                let obj = {
+                    "email": email,
+                    "password": password
+                }
+
+                login(obj).then((res) => {
+                    if (!res) {
+                        console.log(res);
+                    }
+                    console.log(res)
+                    console.log(res.data.data)
+                    localStorage.setItem("Token : ", res.data.data)
+                }).catch((err) => {
+                    console.log(err)
+                })
+                console.log(obj);
             }
         }
     }
