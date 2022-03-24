@@ -1,0 +1,93 @@
+.Head{
+    margin-top: 1vh;
+    margin-left: 26vw;
+    width: 19vw;
+}
+.containerContact{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 8vh;
+
+}
+.btn-primary{
+    height: 5.2vh;
+}
+.box2{
+    /* box-shadow: 2px 3px 2px 3px; */
+    border: 2px solid;
+    border-radius: 16px;
+    display: flex;
+    position: relative;
+    flex-wrap: wrap;
+    width: 100%;
+    min-height: 28vh;
+    height: 48vh;
+    margin-top: 5vh;
+}
+
+.box3{
+    margin: 1vh 1vh 1vh 1vh;
+    display: flex;
+    box-shadow: 2px 2px 2px 2px;
+    border-radius: 16px;
+    flex-direction: column;
+    width: 17vw;
+    min-height: 21vh;
+    
+}
+
+.form-contact{
+    border-radius: 15px;
+    margin-top: -4vh;
+    box-shadow: 3px 3px 5px 5px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 75vw;
+    min-height: 80vh;
+    padding: 2vh;
+}
+.input-group {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    width: 100%;
+    margin-left: 27vw;
+}
+.headingContact{
+    display: flex;
+    align-items: end;
+    justify-content: left;
+    width: 9vw;
+    margin-left: 31vw;
+}
+.name{
+    display: flex;
+    justify-content: space-between;
+}
+.Img-class{
+    width: 33vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.buttonS{
+    display: flex;
+    width: max-content;
+    justify-content: space-between;
+    margin-top: 4vh;
+}
+
+.button-end{
+    margin-left: 31vw;
+    margin-top: 1vh;
+}
+
+.btn-primaryConatct{
+    background-color: rgb(79 131 243);
+}

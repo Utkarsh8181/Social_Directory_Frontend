@@ -1,78 +1,60 @@
-.home{
+.signin{
+    box-shadow: 3px 3px 7px 7px;
+    width: 47vw;
+    height: 56vh;
+    border-radius: 20px;
     display: flex;
-    justify-content: center;
-    margin-top: 0px;
-    color: black;
-    margin-left: 65px;
-}
-
-.Container{
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 10vh;
-}
-.form{
-    position: relative;
+    margin-left: 25vw;
+    margin-top: 14vh;
+  }
+  
+  .signin-image-signin{
+    height: 62vh;
+    /* margin-top: 13vh; */
+    margin-left: -13vw;
     display: flex;
     flex-direction: column;
-    width: 22vw;
-    height: 50vh;
-    border: 1px solid gainsboro;
-    border-radius: 12px;
-}
-.header{
-    margin-top: 16px;
+    width: 50vw;
+  }
+  
+  .signin-form-si{
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center
-}
-.sign{
-    display: flex;
-    justify-content: center;
-    color: black;
-}
-.use{
-    display: flex;
-    justify-content: center;
-    margin: 0px 10px;
-}
-.use ,h5{
-    display: flex;
-    justify-content: center;
-    margin-top: 0px;
-}
-.emailOne{
-    margin-bottom: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.password{
-    display: flex;
-    margin-bottom: 20px;
-    margin: auto;
-}
-.account{
+    flex-direction: column;
+    margin-left: 37vw;
+    margin-top: -61vh;
+  }
+  /* 
+  .form-title-signin{
+    margin-top: -3vh;
+      margin-left: 20vw;
+      margin-bottom: 2vh;
+  } */
+  
+  
+  .signin-for{
+    margin-left: -11vw;
+    margin-top: 4.5vh;
+  }
+  
+  .form-signin-group{
+    margin-bottom: 2rem;
     display: flex;
     justify-content: space-between;
-    flex-direction: row;
-    align-items: center;    
-}
-.textletter{
-    display: flex;
-    justify-content: center;
-}
-.button{
-    padding: 11px;
-}
-
-#GFG{
-    color: #255cd8;
-    text-decoration: none;
-    font-size: 18px;
-    margin-left: 10px;
-}
-
+    margin-right: 3vw;
+    margin-top: 5vh;
+  }
+  
+  .form-signin-group-form-button{
+    margin-top: auto;
+    margin-left: -2vw;
+  }
+  
+  .signin-image-link{
+    margin-top: -4vh;
+  }
+  .accountcol{
+      margin-top:-5vh
+  }
+  .buttonSig{
+    margin-top: 4vh;
+  }

@@ -5,12 +5,16 @@ import './Signup.css';
 import { Register } from "../services/userServices";
 import TextField from '@mui/material/TextField';
 import Button from '@mui/material/Button';
+import { useHistory, NavLink } from "react-router-dom";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import image from '../../Images/image.png'
 const emailRegex = /^[a-zA-z]{3}([+-_ .]*[a-zA-Z0-9]+)*[@][a-zA-z0-9]+(.[a-z]{2,3})*$/;
 const passRegex = /(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}/;
 const phoneRegex = /^(?:(?:\+|0{0,2})91(\s*[\ -]\s*)?|[0]?)?[789]\d{9}|(\d[ -]?){10}\d$/;
 
 const Signup = () => {
+    const history = useHistory();
     const [phone, setPhone] = React.useState("")
     const [email, setEmail] = React.useState("")
     const [password, setPassword] = React.useState("")
@@ -24,6 +28,9 @@ const Signup = () => {
     }
     const getPassword = (e) => {
         setPassword(e.target.value)
+    }
+    const Click = () => {
+        history.push("/signin")
     }
     const submit = () => {
         if (email === "" && password === "" && phone === "") {
@@ -103,30 +110,37 @@ const Signup = () => {
                 }
 
                 Register(obj).then((res) => {
+                    toast.success("User Registered Successfully!", {
+                        position: "top-center",
+                    });
                     console.log(res)
+                    history.push('/Signin')
                 })
                     .catch((err) => {
+                        toast.error("Error in Registering User!", {
+                            position: "top-center",
+                        });
                         console.log(err)
                     })
                 console.log(obj);
             }
-        }   
+        }
     }
     return (
         <div className="Box-class">
-            <div className="container">
+            <div className="containerSignup">
                 <div className="form-class">
-                    <div className="home">
+                    <div className="homeS">
                         <h1>Social Directory</h1>
                     </div>
                     <div className='heading'>
                         <h2>Registration</h2>
                     </div>
-                    <div className='email'>
+                    <div className='emailSignup'>
                         <TextField id="email" onChange={getMail} error={regexObj.emailBorder} helperText={regexhelpertext.emailHelperText} label="Email" variant="outlined" />
                     </div>
                     <div className='password-rectangle'>
-                        <div className='password'>
+                        <div className='passwordSignup'>
                             <TextField id="password" type="password" onChange={getPassword} error={regexObj.passwordBorder} helperText={regexhelpertext.passwordHelperText} label="Password" variant="outlined" />
                         </div>
                     </div>
@@ -135,10 +149,10 @@ const Signup = () => {
                             <TextField id="phoneNo" onChange={getPhone} error={regexObj.phoneBorder} helperText={regexhelpertext.phoneHelperText} label="Contact Number" variant="outlined" />
                         </div>
                     </div>
-
-                    <div className='button'>
+                    <div className='buttonS'>
+                        <h2 className='accountcolor'><NavLink to='/signin' id="GFG" href='Signup.css' onClick={Click}>I am already register</NavLink></h2>
                         <div className="button-end">
-                            <Button onClick={submit} variant="contained">Register</Button>
+                            <Button className='abc' onClick={submit} variant="contained">Register</Button>
                         </div>
                     </div>
                 </div>
@@ -146,6 +160,7 @@ const Signup = () => {
                     <img src={image} ></img>
                 </div>
             </div>
+            <ToastContainer />
         </div>
     )
 }

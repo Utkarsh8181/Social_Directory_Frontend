@@ -1,0 +1,57 @@
+.register-form {
+    margin-left: 4vw;
+    height: 71vh;
+    width: 39vw;
+}
+.form-group-profile {
+  margin-bottom: 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-right: 22vw;
+  margin-top: 5vh;
+
+}
+.form-title-p {
+  margin-top: -4vh;
+}
+
+.titleProfile{
+  margin-top: -1vh;
+  margin-bottom: 5vh;
+}
+
+.signup {
+  border-radius: 20px;
+  box-shadow: 3px 3px 4px 4px;
+  width: 70vw;
+  margin-left: 15vw;
+  height: 75vh;
+  margin-top: 6vh;
+}
+
+.form-group-form-but{
+    padding-inline: 4vw;
+    margin-left: -25.5vw;
+}
+
+.register-form{
+    margin: top 4vh;
+}
+
+.signup-image {
+  display: flex;
+    margin-left: 26vw;
+    margin-top: -77vh;
+    flex-direction: row;
+    align-items: flex-end;
+    height: 67vh;
+    width: 50vw;
+}
+
+.signup-image-link {
+display: flex;
+flex-direction: row;
+margin-left: -30vw;
+margin-bottom: 5vh;
+}

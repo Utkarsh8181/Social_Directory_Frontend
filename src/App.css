@@ -36,3 +36,14 @@
     transform: rotate(360deg);
   }
 }
+.ml-auto, .mx-auto {
+  margin-left: auto!important;
+}
+
+#notfound{
+  margin-top:35vh;
+}
+
+.bott{
+  background-color: rgb(18, 90, 245);
+}
